@@ -1,0 +1,25 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #AAF0D1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .mid img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.foot {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+}

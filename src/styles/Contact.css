@@ -1,0 +1,93 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.contactBody {
+  display: flex;
+  width: auto;
+  height: 86vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contactTitle {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.contactTitle > h1 {
+  margin-bottom: 0;
+	text-align: center;
+	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 5px 5px 10px #fffaf0, -5px -5px 10px #fffaf0;
+	animation: titleEfct 3s ease;
+}
+
+.inqForm {
+  display: flex;
+  align-items: center;
+	padding: 12px;
+	width: 350px;
+	background: rgba(220, 220, 220, 0.8);
+	border-radius: 15px;
+	justify-content: center;
+}
+
+.inqForm > form {
+  align-items: center;
+}
+
+.inqForm > form > input {
+  width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.inqForm > form > textarea {
+  width: 300px;
+	height: 100px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.inqForm > form > button {
+  width: 300px;
+	background-color: #8FBC8F;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.inqForm > form > button:hover {
+  background-color: #45a049;
+}
+
+@keyframes titleEfct {
+	0% {
+		transform: translateY(60px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.address {
+	color: ghostwhite;
+}

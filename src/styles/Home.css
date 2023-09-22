@@ -1,0 +1,71 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.mainBody {
+  display: flex;
+  width: auto;
+  height: 86vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bodyTitle {
+  text-align: center;
+  text-decoration: underline;
+  margin: auto 0px 50px 0px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: 5px 5px 10px #fffaf0, -5px -5px 10px #fffaf0;
+}
+
+.bodyBot {
+  display: flex;
+	margin-top: auto;
+  margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	text-shadow: 5px 5px 10px #fffaf0, -5px -5px 10px #fffaf0;
+}
+
+.titleCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100px;
+}
+
+.one {
+	animation: Slide_Up 1.4s ease, fadeIn 2s;
+}
+
+.two {
+	animation: Slide_Up 2s ease, fadeIn 3s;
+}
+
+@media (max-width: 700px) {
+	.bodyBot {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 550px) {
+	.one, .two {
+		font-size: 40px;
+	}
+}
+
+@keyframes Slide_Up {
+	0% {
+		transform: translateY(150px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

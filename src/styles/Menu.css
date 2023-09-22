@@ -1,0 +1,142 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.bg {
+  height: 110vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  box-shadow: 0 10px 10px white inset, 0 -10px 10px white inset;
+}
+
+.menuBfast, .menuLunch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuTitle {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.menuTitle > h1 {
+  margin-bottom: 0;
+	text-align: center;
+	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 5px 5px 10px #fffaf0, -5px -5px 10px #fffaf0;
+	animation: titleEfct 3s ease;
+}
+
+.menuBox {
+  display: flex;
+  height: 80vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.selection {
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: 40px;
+  font-family: "Blackadder ITC", sans-serif;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px; 
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.selection > img {
+  position: absolute;
+  width: 100%;
+  filter: blur(5px);
+}
+
+.selection:hover > img {
+  filter: none
+}
+
+.selection > p {
+  color: black;
+  z-index: 5;
+}
+
+.selection:hover > p {
+  cursor: pointer;
+}
+
+.foodImg img {
+  border-radius: 25px;
+  height: 32vh;
+}
+
+.foodName {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.foodIngr {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.foodDesc {
+  font-size: 18px;
+}
+
+.breakfast, .lunch {
+  display: flex;
+  width: 70%;
+  margin: 10px;
+  background: rgba(220, 220, 220, 0.8);
+	border-radius: 25px;
+}
+
+.foodInfo {
+  padding: 15px;
+}
+
+.extra {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+@keyframes titleEfct {
+	0% {
+		transform: translateY(60px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 1000px) {
+	.menuBox {
+		flex-direction: column;
+	}
+
+  .selection {
+    width: 80vw;
+  }
+
+  .breakfast, .lunch {
+    width: 660px
+  }
+}

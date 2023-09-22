@@ -1,0 +1,95 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.aboutBody {
+  display: flex;
+  width: auto;
+  height: 86vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.aboutTitle {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.aboutTitle h1 {
+  margin-bottom: 0;
+	text-align: center;
+	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 5px 5px 10px #fffaf0, -5px -5px 10px #fffaf0;
+	animation: titleEfct 3s ease;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutTable {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.column {
+  display: block;
+	width: 400px;
+	padding: 20px;
+	height: 485px;
+}
+
+.aboutMid > img {
+  width: 100%;
+}
+
+.aboutLeft {
+	animation: fadeIn 3s, rTOl 2s ease;
+	text-align: center;
+}
+
+.aboutMid {
+	animation: fadeIn 3s;
+	text-align: center;
+	border-left: 3px solid grey;
+	border-right: 3px solid grey;
+}
+
+.aboutRight {
+	animation: fadeIn 3s, lTOr 2s ease;
+}
+
+@keyframes titleEfct {
+	0% {
+		transform: translateY(60px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes lTOr {
+	0% { transform: translateX(150px); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes rTOl {
+	0% { transform: translateX(-150px); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
